@@ -82,7 +82,7 @@ public class MyFirstTelegramBot extends MultiSessionTelegramBot {
         }
 
         if (getCallbackQueryButtonKey().equals("Final_btn")){
-            sendTextMessageAsync(STEP_8_TEXT);
+            sendTextMessageAsync(FINAL_TEXT);
         }
 
 
