@@ -27,7 +27,7 @@ public class MyFirstTelegramBot extends MultiSessionTelegramBot {
             setUserGlory(0);
 
             sendTextMessageAsync(STEP_1_TEXT,
-                    Map.of("Hackear la never","step_1_btn"));
+                    Map.of("Hackear la nevera","step_1_btn"));
         }
 
         //Identificamos el Boton sobre el que se hace Click
@@ -43,7 +43,7 @@ public class MyFirstTelegramBot extends MultiSessionTelegramBot {
         if (getCallbackQueryButtonKey().equals("step_2_btn")){
             setUserGlory(20);
             sendTextMessageAsync(STEP_3_TEXT,
-                    Map.of("_Hackear_ al *Robot Aspirador*","step_3_btn"));
+                    Map.of("Hackea al Robot Aspirador Zumbador","step_3_btn"));
 
         }
 
@@ -59,26 +59,26 @@ public class MyFirstTelegramBot extends MultiSessionTelegramBot {
         if (getCallbackQueryButtonKey().equals("step_4_btn")){
             addUserGlory(30);
             sendTextMessageAsync(STEP_5_TEXT,
-                    Map.of("Es momento de encender y ponerte la *GoPro*","step_5_btn"));
+                    Map.of("Obtuviste una mision Gatuna, momento de encender y ponerte la *GoPro* de Michis","step_5_btn"));
         }
 
         if (getCallbackQueryButtonKey().equals("step_5_btn")){
             addUserGlory(40);
             sendTextMessageAsync(STEP_6_TEXT,
-                    Map.of("Enviar al Robot aspirador por comida! +30 de fama","step_6_btn",
-                            "Dar un paseo en el robot aspirador! +30 de fama","step_6_btn",
-                            "¡Huir del Robot Aspirador! +30 de fama","step_6_btn"));
+                    Map.of("Inicia una inspeccion del vecindario en busca de actividades paranormales! +40 de fama","step_6_btn",
+                            "Dirigete al parque y filma el comportamiento humano con los animales! +40 de fama","step_6_btn",
+                            "Graba cual es el Ingrediente secreto de las Pizzas del Sr. Gattuso ! +40 de fama","step_6_btn"));
         }
 
         if (getCallbackQueryButtonKey().equals("step_6_btn")){
             addUserGlory(50);
             sendTextMessageAsync(STEP_7_TEXT,
-                    Map.of("Rompe la Contrseña","step_7_btn"));
+                    Map.of("Hackea la Contraseña y Proporciona el Material Grabado al Dpto de Inteligencia Gatuno","step_7_btn"));
         }
 
-        if (getCallbackQueryButtonKey().equals("step_8_btn")){
+        if (getCallbackQueryButtonKey().equals("step_7_btn")){
             sendTextMessageAsync(STEP_8_TEXT,
-                    Map.of("Salir al Patio","step_8_btn"));
+                    Map.of("Guarda tus elementos como detective Gatuno y descansa con tu humano favorito","Final_btn"));
         }
 
         if (getCallbackQueryButtonKey().equals("Final_btn")){
